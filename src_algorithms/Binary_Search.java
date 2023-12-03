@@ -1,12 +1,8 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Arrays;
+
 public class Binary_Search {
-    public static void main(String[] args) {
-        int[] arr = new int[] {0,1,234,4,5,6};
-        int target = 234;
-        System.out.println(bs(arr, target));
-    }
     public static int bs(int[] arr, int target){
+        Arrays.sort(arr);
         int l = 0;
         int r = arr.length - 1;
         while (l<=r){
